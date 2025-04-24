@@ -16,6 +16,7 @@
         transform: translateX(-50%);
         display: flex;
         gap: 10px;
+        z-index: 9999;
       }
 
       .ui-buttons a {
@@ -37,7 +38,7 @@
   <body>
     <div id="ar">
       <a-scene
-        mindar-image="imageTargetSrc: target.mind"
+        mindar-image="imageTargetSrc: ./targets.mind; filterMinCF:0.0001; filterBeta: 0.001"
         embedded
         color-space="sRGB"
         renderer="colorManagement: true, physicallyCorrectLights"
