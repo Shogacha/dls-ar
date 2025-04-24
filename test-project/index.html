@@ -8,6 +8,30 @@
     <style>
       body, html { margin: 0; padding: 0; overflow: hidden; }
       #ar { width: 100vw; height: 100vh; }
+
+      .ui-buttons {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+      }
+
+      .ui-buttons a {
+        padding: 10px 20px;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 16px;
+        opacity: 0.8;
+      }
+
+      .ui-buttons a:hover {
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
@@ -30,6 +54,12 @@
           <a-video src="#vid" width="1.5" height="0.9" position="0 0 0"></a-video>
         </a-entity>
       </a-scene>
+
+      <div class="ui-buttons">
+        <a href="https://instagram.com/ТВОЙ_АККАУНТ" target="_blank">Instagram</a>
+        <a href="https://wa.me/ТВОЙ_НОМЕР" target="_blank">WhatsApp</a>
+        <a href="https://dlsar.github.io/dls-ar" target="_blank">Сайт</a>
+      </div>
     </div>
   </body>
 </html>
